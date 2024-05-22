@@ -1,0 +1,128 @@
+/* General Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-image: url('assets/cover3.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Wrapper Styles */
+.wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4); /* Darkened background for better contrast */
+}
+
+/* Sign-in Box Styles */
+.signin_box {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+  width: 400px;
+  backdrop-filter: blur(15px);
+  border: 2px solid #bbd8e1;
+  border-radius: 15px;
+  padding: 3em 2em;
+  color: #333;
+  box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Sign-in Header Styles */
+.signin-header {
+  position: absolute;
+  top: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #bbd8e1;
+  width: 100px;
+  height: 55px;
+  border-radius: 0 0 20px 20px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  flex-direction: column-reverse;
+}
+
+.signin-header span {
+  font-size: 24px;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Input Box Styles */
+.input_box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+}
+
+.input-field {
+  width: 100%;
+  height: 45px;
+  font-size: 16px;
+  background: transparent;
+  color: #333;
+  padding: 0 2px;
+  border: 2px solid #bbd8e1;
+  border-radius: 25px;
+  outline: none;
+}
+
+.label {
+  position: absolute;
+  top: 12px;
+  left: 20px;
+  transition: .2s;
+  color: #666;
+}
+
+.input-field:focus ~ .label,
+.input-field:valid ~ .label {
+  top: -10px;
+  left: 20px;
+  font-size: 14px;
+  background-color: #bbd8e1;
+  border-radius: 5px;
+  color: #333;
+  padding: 0 5px;
+}
+
+/* Submit Button Styles */
+.input-submit {
+  width: 100%;
+  height: 45px;
+  background: #bbd8e1;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: .3s;
+  color: #333;
+}
+
+.input-submit:hover {
+  background: #a6c8d8;
+}
+
+/* Responsive Design */
+@media (max-width: 564px) {
+  .wrapper {
+    padding: 20px;
+  }
+  .signin_box {
+    padding: 2.5em 1.5em;
+  }
+}

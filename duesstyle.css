@@ -1,0 +1,105 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('assets/cover3.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #333;
+  }
+  
+  /* Header Styles */
+  header {
+    background: rgba(51, 51, 51, 0.8); /* Added transparency */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 2rem;
+  }
+  
+  /* Navbar Styles */
+  .navbar {
+    background: rgba(68, 68, 68, 0.8); /* Added transparency */
+    overflow: hidden;
+    position: fixed;
+    top: 60px; /* Adjust based on header height */
+    width: 100%;
+    z-index: 1;
+  }
+  
+  .navbar ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+  }
+  
+  .navbar li {
+    display: inline;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: #fff;
+    padding: 15px 20px;
+    display: inline-block;
+  }
+  
+  .navbar a:hover {
+    background: rgba(85, 85, 85, 0.8); /* Adjusted hover effect */
+  }
+  
+  /* Main Content Styles */
+  main {
+    padding: 20px;
+    margin-top: 120px; /* Adjust to avoid overlap with header and navbar */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  main h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Additional Section Styling */
+  section {
+    background: rgba(255, 255, 255, 0.9); /* Added transparency */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .navbar ul {
+      text-align: left;
+    }
+  
+    .navbar li {
+      display: block;
+    }
+  
+    .navbar a {
+      display: block;
+    }
+  }
+  
